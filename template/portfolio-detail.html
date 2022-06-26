@@ -1,0 +1,192 @@
+{% extends 'master.html' %}
+{% load static %}
+{% block content %}
+
+<!doctype html>
+<html lang="en">
+
+
+<!-- ====== Header End ====== --> 
+
+<!-- ====== Banner Start ====== -->
+<section id="inner-banner">
+  <div class="container">
+    <div class="row">
+      <div class="inner-heading">
+        <h2>Portfolio Detail</h2>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="portfolio-2-column.html">Portfolio</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Portfolio Detail</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ====== Banner End ====== --> 
+
+<!-- ====== Portfolio Start ====== -->
+<section id="portfolio_detail">
+  <div class="container">
+    <h3 class="d-none">heading</h3>
+   
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+    <div class="project_screen">
+       <img src="{% static 'img/project_ss.jpg' %}" alt="Project" />
+    </div>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 about_project">
+        <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+          <div class="icon">
+            <i class="flat flaticon-avatar"></i> 
+          </div>
+          <div class="content">
+            <h6>Client</h6>
+            <div class="value">Phil Dives</div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+          <div class="icon">
+            <i class="flat flaticon-facebook-placeholder-for-locate-places-on-maps"></i> 
+          </div>
+          <div class="content">
+            <h6>Location</h6>
+            <div class="value">Tanta, Algharbia</div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+          <div class="icon">
+            <i class="flat flaticon-calendar"></i> 
+          </div>
+          <div class="content">
+            <h6>Date</h6>
+            <div class="value">Sept 4, 2018</div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+          <div class="icon">
+            <i class="flat flaticon-folder"></i> 
+          </div>
+          <div class="content">
+            <h6>Category</h6>
+            <div class="value">Design, Illustration</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 project_description">
+        <h4>There are many variations of passages of Lorem Ipsum available</h4>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
+    </div>
+  </div>
+  </div>
+</section>
+<!-- ====== Portfolio End ====== --> 
+
+<!-- ====== Recent Project Start ====== --> 
+<section id="portfolio" class="gray-bg">
+    <div class="container">
+       <div class="section_heading">
+      <h2>Recent <span>Projects</span></h2>
+      <div class="separator">
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-lg-12 col-md-12 col-xs-12 content_sec">
+      <div class="row">
+       
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 port-item design development">
+                        <div class="project portfolio-inner">
+                            <img src="{% static 'img/portfolio/thumbnail/project_1.jpg' %}" alt="project">
+                            <div class="label">
+                                <div class="label-text"> <a href="portfolio-detail.html" class="text-title">Photography</a> </div>
+                                <div class="label-bg"></div>
+                            </div>
+                            <div class="zoom"> <a href="{% static 'img/portfolio/large/project_1.jpg' %}" class="popup-box"  data-lightbox="image" data-title="Project"> <i class="flat flaticon-magnifying-glass"></i> </a> </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 port-item app logo">
+                        <div class="project portfolio-inner">
+                            <img src="{% static 'img/portfolio/thumbnail/project_2.jpg' %}" alt="project">
+                            <div class="label">
+                                <div class="label-text"> <a href="portfolio-detail.html" class="text-title">Ecommerce</a> </div>
+                                <div class="label-bg"></div>
+                            </div>
+                            <div class="zoom"> <a href="{% static 'img/portfolio/large/project_2.jpg' %}" class="popup-box"  data-lightbox="image" data-title="Project"> <i class="flat flaticon-magnifying-glass"></i> </a> </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 port-item development logo">
+                        <div class="project portfolio-inner">
+                            <img src="{% static 'img/portfolio/thumbnail/project_3.jpg' %}" alt="project">
+                            <div class="label">
+                                <div class="label-text"> <a href="portfolio-detail.html" class="text-title">Education</a>
+                                </div>
+                                <div class="label-bg"></div>
+                            </div>
+                            <div class="zoom"> <a href="{% static 'img/portfolio/large/project_3.jpg' %}" class="popup-box"  data-lightbox="image" data-title="Project"> <i class="flat flaticon-magnifying-glass"></i> </a> </div>
+                        </div>
+                    </div>
+
+                  
+                   
+          
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ====== Recent Project End ====== --> 
+
+<!-- ====== Counter Start ====== -->
+<section id="counter">
+  <div class="container">
+    <div class="col-lg-12">
+      <div class="row">
+        <div class="counter-column col-lg-3 col-md-6 col-sm-6 col-xs-12">
+          <div class="count_icon"> <i class="flat flaticon-happiness"></i> </div>
+          <div class="counter_content">
+            <h2><span class="counter">200</span>+</h2>
+            <div class="title">Happy Client</div>
+          </div>
+        </div>
+        <div class="counter-column col-lg-3 col-md-6 col-sm-6 col-xs-12">
+          <div class="count_icon"> <i class="flat flaticon-coffee-cup"></i> </div>
+          <div class="counter_content">
+            <h2><span class="counter">750</span>+</h2>
+            <div class="title">Cups of Coffee</div>
+          </div>
+        </div>
+        <div class="counter-column col-lg-3 col-md-6 col-sm-6 col-xs-12">
+          <div class="count_icon"> <i class="flat flaticon-like"></i> </div>
+          <div class="counter_content">
+            <h2><span class="counter">1800</span>+</h2>
+            <div class="title">Projects Done</div>
+          </div>
+        </div>
+        <div class="counter-column col-lg-3 col-md-6 col-sm-6 col-xs-12">
+          <div class="count_icon"> <i class="flat flaticon-building"></i> </div>
+          <div class="counter_content">
+            <h2><span class="counter">15</span></h2>
+            <div class="title">Office Locations</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="overlay"></div>
+</section>
+<!-- ====== Counter End ====== --> 
+</div>
+<!-- ====== Footer Start ====== -->
+
+{% endblock %}
+</body>
+
+</html>

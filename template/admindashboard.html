@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+                        
+                         <!-- DataTables Example -->
+        <div class="card mb-3">
+            <div class="card-header">
+              <i class="fas fa-table"></i>
+              New Ad</div>
+            <div class="card-body">
+              
+                <div class="form-area" style="padding: 0px 100px 100px 100px;">
+          <form action="addglass.php" method="POST" enctype="multipart/form-data">
+          <br style="clear: both">
+            <h3 style="margin-bottom: 25px; text-align: center; font-size: 30px;"> Upload New Ads Here </h3>
+  
+            <div class="form-group">
+              <input type="text" class="form-control" id="title" name="title" placeholder="Title" required="">
+            </div>     
+            <br>
+  
+            <div class="form-group">
+              <input type="text" class="form-control" id="user" name="user" placeholder="User Name" required="">
+            </div>
+            <br>
+  
+            
+
+            <div class="form-group">
+                <input type="text" class="form-control" id="created" name="created" placeholder="Date/Time" required="">
+              </div>
+              <br>
+  
+            <div class="form-group">
+              <!--<input type="file" class="form-control" id="images_path" name="images_path" placeholder="Your glass Image Path [images/<filename>.<extention>]" required="">-->
+                
+          <input type="file" name="file" class="form-control" placeholder="Browse image" required="" style="height: 5%;">
+               
+        <!--<input type="file" class="form-control"  name="images_path" id="images_path" style="height: 4%;"> -->
+            </div>
+            <br>
+            <div class="form-group">
+                <h6>Status</h6>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>
+                    <label class="form-check-label" for="radio1">Active</label>
+                  </div>
+                  <div class="form-check">
+                    <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">
+                    <label class="form-check-label" for="radio2">Expired</label>
+                  </div>
+            </div>
+            <br>
+  
+            <div class="form-group">
+           <center> <input type="submit"  name="submit" class="btn btn-primary pull-right" value="Upload">  </center> 
+        </div>
+          </form>
+  
+          
+          </div>
+              
+            </div>
+            <div class="card-footer small text-muted">Last Updated at 11 April, 2022 | 1:07 AM
+              </div>
+          </div>
+                    </div>
+                </main>
+                {% endblock %}     
+    </body>
+</html>

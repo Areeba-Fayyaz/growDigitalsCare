@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+<!-- DataTables Example -->
+<div class="card mb-3">
+  <div class="card-header">
+    <i class="fas fa-table"></i>
+    Reviews
+  </div>
+  <div class="card-body">
+
+    <div class="form-area" style="padding: 0px 100px 100px 100px;">
+      <form action="/customer" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <br style="clear: both">
+        <h3 style="margin-bottom: 25px; text-align: center; font-size: 30px;">Customer Reviews</h3>
+
+        <div class="form-group">
+          <input type="text" class="form-control" id="title" name="name" placeholder="Name" required="">
+        </div>
+        <br>
+
+        <div class="form-group">
+          <input type="text" class="form-control" id="user" name="email" placeholder="Email" required="">
+        </div>
+        <br>
+
+
+
+        <div class="form-group">
+          <input type="text" class="form-control" id="created" name="phone" placeholder="Contact Number" required="">
+        </div>
+        <br>
+
+        <div class="form-group">
+          <input type="text" class="form-control" id="created" name="desc" placeholder="Description" required="">
+        </div>
+
+
+        <br>
+        <div class="form-group">
+
+        </div>
+        <br>
+
+        <div class="form-group">
+          <center> <input type="submit" name="submit" class="btn btn-primary pull-right" value="Upload"> </center>
+        </div>
+      </form>
+
+
+    </div>
+
+  </div>
+  <div class="card-footer small text-muted">Last Updated at 11 April, 2022 | 1:07 AM
+  </div>
+</div>
+</div>
+</main>
+{% endblock %}
+</body>
+
+</html>
